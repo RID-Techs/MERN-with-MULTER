@@ -1,0 +1,211 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  height: 100vh;
+}
+.loading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.login-page{
+  text-align: center;
+}
+
+.Input-Wraper {
+  display: flex;
+  justify-content: center;
+}
+.Input-fields {
+  background-color: rgba(216, 214, 214, 0.377);
+  border-radius: 20px;
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+}
+#pseudo,
+#email,
+#password,
+#name, #price, #image, #description, #contact{
+  padding: 1em;
+  border: 1px dashed purple;
+  border-radius: 10px;
+  outline: none;
+  width: 50vw;
+  background-color: rgba(240, 248, 255, 0.521);
+}
+
+#pseudo:focus,
+#email:focus,
+#password:focus,
+#name:focus,
+#image:focus,
+#description:focus,
+#price:focus, #contact:focus {
+  caret-color: red;
+  background-color: beige;
+}
+#pseudo:hover,
+#email:hover,
+#password:hover,
+#name:hover,
+#image:hover,
+#description:hover,
+#price:hover, #contact:hover {
+  border: 1px solid purple;
+  box-shadow: 0 0 5px purple;
+}
+
+#Sign-In, #sendItem, #Sign-Up {
+  padding: 0.5em;
+  outline: none;
+  border: 1px solid pink;
+  border-radius: 10px;
+  background-image: radial-gradient(beige 70%, rgba(0, 247, 255, 0.493), beige);
+  font-size: 1.1rem;
+  transition: all 0.3s ease-in-out;
+}
+#Sign-In:hover, #sendItem:hover, #Sign-Up:hover {
+  border: 1px solid rgb(61, 54, 55);
+  border-radius: 10px;
+  background-image: radial-gradient(cyan 30%, beige, cyan);
+}
+.error-page-wraper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+}
+#like-button{
+  outline: none;
+  border: 1px solid transparent;
+  box-shadow: 0px 0px 2px rgb(126, 49, 62);
+  border-radius: 10px;
+  padding: 0.4em;
+  background-color: rgba(240, 248, 255, 0.459);
+  color: purple;
+  transition: all 0.3s ease-in-out;
+}
+#like-button:hover{
+  color: aliceblue;
+  background-color: purple;
+}
+#log-out{
+  outline: none;
+  border: 1px solid transparent;
+  box-shadow: 0px 0px 2px rgb(126, 49, 62);
+  border-radius: 10px;
+  padding: 0.4em;
+  background-color: rgba(240, 248, 255, 0.459);
+  color: red;
+  transition: all 0.3s ease-in-out;
+}
+#log-out:hover{
+  color: #fff;
+  background-color: red;
+}
+.item-button{
+  outline: none;
+  border: 1px solid silver;
+  border-radius: 10px;
+  padding: 0.4em;
+  background-color: blueviolet;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.item-button:hover{
+  background-color: #fff;
+  color: blueviolet;
+}
+.card{
+  border-radius: 20px;
+  filter: drop-shadow(-1px -1px 2px darkred);
+  box-shadow: 1px 1px 2px darkblue;
+  transition: all 0.1s ease-in-out;
+}
+.card:hover{
+  filter: drop-shadow(1px 1px 2px darkred);
+  box-shadow: -1px -1px 2px darkblue;
+}
+.items-display-img{
+  /* background-image: linear-gradient(to left, #fff, rgba(255, 0, 0, 0.075)); */
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.items-display{
+  box-shadow: 0px -1px 5px black;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.btns{
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+#modify-button{
+  outline: none;
+  border: 1px solid silver;
+  border-radius: 10px;
+  padding: 0.4em;
+  background-color: yellow;
+  color: #000;
+  transition: all 0.3s ease-in-out;
+}
+#modify-button:hover{
+  background-color: #000;
+  color: yellow;
+}
+#delete-button{
+  outline: none;
+  border: 1px solid silver;
+  border-radius: 10px;
+  padding: 0.4em;
+  background-color: red;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+#delete-button:hover{
+  background-color: #fff;
+  color: red;
+}
+#back-button{
+  outline: none;
+  border: 1px solid rgb(218, 4, 111);
+  border-radius: 10px;
+  padding: 0.4em;
+  background-color: aliceblue;
+  color: #000;
+  transition: all 0.2s ease-in-out;
+}
+#back-button:hover{
+  background-color:rgb(218, 4, 111);
+  color: aliceblue;
+}
+@media screen and (max-width: 476px) {
+  #pseudo,
+  #email,
+  #password,
+  #name, #price, #image, #description {
+    width: 90vw;
+  }
+}
